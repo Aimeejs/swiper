@@ -10,6 +10,12 @@
 aimee i swiper
 ```
 
+### Register
+```javascript
+// init.js 注册到全局模块
+aimee.reg('swiper');
+```
+
 #### Example
 ```html
 <div class="swiper-container">
