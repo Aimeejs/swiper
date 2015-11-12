@@ -1,0 +1,21 @@
+{
+    "name": "swiper",
+    "aimee": "app",
+    "version": "1.0.0",
+    "description": "Aimeejs的swiper模块，基于swiper@3.2制作",
+    "main": "swiper.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Aimeejs/swiper.git"
+    },
+    "keywords": [
+        "swiper"
+    ],
+    "author": "Swiper",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/Aimeejs/swiper/issues"
+    },
+    "homepage": "https://github.com/Aimeejs/swiper",
+    "dependencies": {}
+}
