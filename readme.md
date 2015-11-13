@@ -3,7 +3,10 @@
 <a href="https://github.com/nolimits4web/swiper" target="_blank">Swiper Github</a>  
 <a href="http://www.idangero.us/swiper" target="_blank">Swiper HomePage</a>
 
-本模块基于Swiper@3.2制作，详细Api文档请访问<a href="http://www.idangero.us/swiper/api" target="_blank">[Swiper Api]</a>
+本模块基于Swiper@3.2制作，详细Api文档请访问<a href="http://www.idangero.us/swiper/api" target="_blank">[Swiper Api]</a>  
+功能和 [Swipe](https://github.com/Aimeejs/swipe) 类似，区别在于```Swipe```更轻量，未压缩版只有19KB，但功能不如```Swiper```丰富  
+追求极致性能的webapp ```Swipe```是你的选择，追求极致功能的客户端```Swiper```是你的选择
+
 
 #### Install
 ```
@@ -17,6 +20,7 @@ aimee.reg('swiper');
 ```
 
 #### Example
+下面示例dom中的类必须存在，样式已打包到模块中，无需手动添加
 ```html
 <div class="swiper-container">
 	<div class="swiper-wrapper">
@@ -33,6 +37,9 @@ aimee.reg('swiper');
 </div>
 ```
 
+因为此模块涉及到尺寸位置计算，所以需要在```page```或者```app```渲染到浏览器之后调用，  
+Aimeejs app内应该在 ```app.pagerender``` 方法之内调用，  
+Aimeejs page内应该在 ```page.postrender``` 方法之内调用
 ```javascript
 $('.swiper-container').swiper()
 ```
@@ -51,6 +58,9 @@ $('.swiper-container').swiper({
 
 	// 自动切换的时间间隔（单位ms），不设定该参数slide不会自动切换。
 	autoplay: 0,
+
+	// 是否开启循环
+	loop: false,
 
 	// 用户操作swiper之后，是否禁止autoplay。默认为true：停止。
 	// 如果设置为false，用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay。
